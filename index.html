@@ -1,51 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <!-- The header section  -->
+    <div class="header_information">
+      <div class="notofications-show">
+        Notifications
+        <span id="counter-unread" class="counter-unread">3</span>
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <div class="all_as_read">
+        <a
+          id="mark_as_read"
+          target="blank"
+          class="mark_as_read"
+          onclick="markAsRead()"
+          >Mark all as read</a
+        >
+      </div>
+    </div>
+    <section class="notifications_center">
+      <div id="notification-unread" class="mark-w notification">
+        <img
+          src="assets/images/avatar-mark-webber.webp"
+          alt="icon-of-user"
+          class="user_icon"
+        />
+        <a href="" class="notification_event">
+          <b class="boldend-name">Mark Webber</b> reacted to your recent post
+          <span class="special-announcement"> My first tournament today! </span>
+          <br />
+          1m ago
+        </a>
+      </div>
+      <div id="notification-unread-3" class="angie-g notification">
+        <img
+          src="assets/images/avatar-angela-gray.webp"
+          alt="icon-of-user"
+          class="user_icon"
+        />
+        <a href="" class="notification_event">
+          <b class="boldend-name">Angie Gray</b> followed you
 
-  Notifications 3
+          <br />
+          5m ago
+        </a>
+      </div>
+      <div id="notification-unread-2" class="jack-T notification">
+        <img
+          src="assets/images/avatar-jacob-thompson.webp"
+          alt="icon-of-user"
+          class="user_icon"
+        />
+        <a href="" class="notification_event">
+          <b class="boldend-name"> Jacob Thompson </b> has joined your group
+          <span class="special-announcement">Chess Club </span>
+          <br />
+          1 day ago
+        </a>
+      </div>
 
-  Mark all as read
+      <div id="notification-unread" class="riz-h notification-read">
+        <img
+          src="assets/images/avatar-rizky-hasanuddin.webp"
+          alt=" icon-of-user"
+          class="user_icon"
+        />
+        <a href="" class="notification_event">
+          <b class="boldend-name"> Rizky Hasanuddin </b> sent you a private
+          message
+          <br />
+          <br />
+          5 days ago
+        </a>
+        <br />
+        <br />
+        <p class="message">
+          Hello, thanks for setting up the Chess Club. I've been a member for a
+          few weeks now and I'm already having lots of fun and improving my
+          game.
+        </p>
+      </div>
 
-  Mark Webber reacted to your recent post My first tournament today!
-  1m ago
+      <div class="kim-s notification-read read-notification">
+        <div class="notification-info">
+          <img
+            src="assets/images/avatar-kimberly-smith.webp"
+            alt=" icon-of-user"
+            class="user_icon"
+          />
+          <a href="" class="notification_event">
+            <b class="boldend-name"> Kimberly Smith</b> commented on your
+            picture
+            <br />
+            <br />
+            1 week ago
+          </a>
+        </div>
+        <br />
+        <br />
+        <img
+          src="assets/images/image-chess.webp"
+          alt=""
+          class="picture-comment"
+        />
+      </div>
 
-  Angela Gray followed you
-  5m ago
+      <div class="Nat-P notification-read">
+        <img
+          src="assets/images/avatar-nathan-peterson.webp"
+          alt="icon-of-user"
+          class="user_icon"
+        />
+        <a href="" class="notification_event">
+          <b class="boldend-name"> Nathan Peterson</b> reacted to your recent
+          <span class="special-announcement"
+            >5 end-game strategies to increase your win rate
+          </span>
+          <br />
+          2 weeks ago
+        </a>
+      </div>
 
-  Jacob Thompson has joined your group Chess Club
-  1 day ago
-
-  Rizky Hasanuddin sent you a private message
-  5 days ago
-  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
-  I'm already having lots of fun and improving my game.
-
-  Kimberly Smith commented on your picture
-  1 week ago
-
-  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-  2 weeks ago
-
-  Anna Kim left the group Chess Club
-  2 weeks ago
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="Ann-K notification-read">
+        <img
+          src="assets/images/avatar-anna-kim.webp"
+          alt="icon-of-user"
+          class="user_icon"
+        />
+        <a href="" class="notification_event">
+          <b class="boldend-name"> Anna Kim</b> left the group
+          <span class="special-announcement">Chess Club </span>
+          <br />
+          2 weeks ago
+        </a>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Pablo-cyber21</a
+      >. Coded by <a href="#">Asiimawe Rodrick Pablo.</a>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

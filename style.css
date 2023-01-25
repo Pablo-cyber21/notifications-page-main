@@ -1,0 +1,108 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --light-blue-2-grayish: hsl(210, 60%, 98%);
+    --grayish-blue-1:hsl(211, 68%, 94%);
+    --grayish-blue-2:hsl(205, 33%, 90%);
+    --Grayish-blue:hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+    
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.user_icon{
+    width: 35px;
+    max-width: 100%;
+}
+
+.notification{
+    padding: 1.22em 1em;
+    background: var(--grayish-blue-2);
+    margin: 1.33em;
+    display: flex;
+    flex-direction: row;
+    gap: 1.22em;
+    border-radius: 10px;
+}
+
+.notification-read{
+    padding: 1.22em 1em;
+    margin: 1.33em;
+}
+
+.message{
+    background: #fff;
+    padding: 1.22em ;
+    width: 777px;
+    border: 1px solid var(--Grayish-blue);
+    max-width: 100%;
+}
+
+.message:hover{
+    background-color: var(--light-blue-2-grayish);
+}
+
+.header_information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1.44em 1.22em;
+}
+
+.mark_as_read{
+text-decoration: none;
+color: var(--Dark-grayish-blue);
+}
+
+.mark_as_read:hover{
+color: var(--Very-dark-blue);
+}
+
+.counter-unread{
+    background: var(--Very-dark-blue);
+    color:#fff;
+    padding: .33em .74em;
+    border-radius: 5px;
+}
+
+.notification_event{
+    text-decoration: none;
+    color: #000;
+}
+
+.special-announcement{
+    font-weight: 600;
+}
+
+.special-announcement:hover{
+    color: blue;
+}
+
+.boldend-name:hover{
+color: blue;
+}
+
+.read-notification{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.picture-comment{
+    width: 70px;
+    max-width: 100%;
+}
+
+.attribution{ 
+    font-size: 11px;
+    text-align: center;
+     }
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+ }
